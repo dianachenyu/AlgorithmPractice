@@ -26,4 +26,5 @@ class Solution:
 
       
 # Time O(N), Space O(N)
+# BHS
 # Trick: need to set nums[arr[cur]] = []; otherwise will copy list nums[arr[cur]] up to N times, get a total time complexity O(N^2)
