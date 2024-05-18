@@ -23,3 +23,27 @@ class Solution:
             i += 1
             j -= 1
         return s[i + 1: j +1] == s[i + 1: j +1][::-1] or s[i: j] == s[i: j][::-1]
+
+
+# Method 3:
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+
+        def helper(l, r):
+            while l < r:
+                if s[l] == s[r]:
+                    l += 1
+                    r -= 1
+                else:
+                    return False
+            return True
+    
+        l = 0
+        r = len(s) - 1
+        while l < r:
+            if s[l] == s[r]:
+                l += 1
+                r -= 1
+            else:
+                return helper(l + 1, r) or helper(l, r - 1)
+        return True
