@@ -8,8 +8,11 @@ class Solution:
             self.presum[i] += self.presum[i - 1]
         
     def pickIndex(self) -> int:
-        num = random.randrange(0, self.presum[-1])
-        idx = bisect.bisect(self.presum, num)
+        num = random.randint(1, self.presum[-1])
+        idx = bisect.bisect_left(self.presum, num)
+        # another method
+        # num = random.randrange(0, self.presum[-1])
+        # idx = bisect.bisect(self.presum, num)
         return idx 
 
 
