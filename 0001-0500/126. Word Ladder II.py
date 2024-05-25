@@ -26,10 +26,12 @@ class Solution:
         res = []
         def dfs(node, path):
             if node == beginWord:
-                res.append([node] + path)
+                res.append([node] + path[::-1])
                 return 
             for lnode in parent[node]:
-                dfs(lnode, [node] + path)
+                path.append(node)
+                dfs(lnode, path)
+                path.pop()
 
         dfs(endWord, [])
         return res
