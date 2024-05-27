@@ -11,6 +11,7 @@ class Solution:
                 return i
         return -1
 
-      
-  # Time O(N)
-  # Space O(N)
+
+# Note: bucket sort method works with the constraint 0 <= nums[i] 
+# Time O(N)
+# Space O(N)
