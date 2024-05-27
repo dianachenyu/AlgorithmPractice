@@ -12,6 +12,6 @@ class Solution:
         return -1
 
 
-# Note: bucket sort method works with the constraint 0 <= nums[i] 
+# Note: Counting sort. Counting sort works under the constraint that nums are non-negative integers
 # Time O(N)
 # Space O(N)
