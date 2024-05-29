@@ -36,4 +36,13 @@ class Solution:
         return dfs(root)
 
 
-# Prerequisite of this question is the contraint "p and q will exist in the tree."
+# Note: Prerequisite of this question is the contraint "p and q will exist in the tree."
+
+# Similar Questions
+# 235. Lowest Common Ancestor of a Binary Search Tree
+# 236. Lowest Common Ancestor of a Binary Tree
+# 1644. Lowest Common Ancestor of a Binary Tree II. remove the constraint that p and q exist in the tree
+# 1650. Lowest Common Ancestor of a Binary Tree III. given parent of each node, not given tree root
+# 1676. Lowest Common Ancestor of a Binary Tree IV. find LCA of k nodes
+# 1123. Lowest Common Ancestor of Deepest Leaves
+
